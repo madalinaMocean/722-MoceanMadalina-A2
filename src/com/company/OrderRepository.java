@@ -5,9 +5,20 @@ package com.company;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * The type Order repository.
+ */
 public class OrderRepository implements ICRUDRepository<Integer,Order>{
+    /**
+     * The Order list.
+     */
     public List<Order> OrderList;
 
+    /**
+     * Instantiates a new Order repository.
+     *
+     * @param orderList the order list
+     */
     public OrderRepository(List<Order> orderList) {
         OrderList = orderList;
     }

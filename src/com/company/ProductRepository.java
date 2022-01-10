@@ -4,9 +4,20 @@ package com.company;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * The type Product repository.
+ */
 public class ProductRepository implements ICRUDRepository<Integer,Product>{
+    /**
+     * The Product list.
+     */
     public List<Product> ProductList;
 
+    /**
+     * Instantiates a new Product repository.
+     *
+     * @param productList the product list
+     */
     public ProductRepository(List<Product> productList) {
         ProductList = productList;
     }
