@@ -47,4 +47,14 @@ public class Order {
         ProductList = productList;
     }
 
+    public int getTotalPrice(){
+        int sum=0;
+        for (Product product: getProductList()
+             ) {
+            sum+=product.getPrice();
+
+        }
+        return sum;
+    }
+
 }
